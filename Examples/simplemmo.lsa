@@ -1,0 +1,20 @@
+OPEN("https://web.simple-mmo.com/login")
+WAIT_FOR_PAGE_LOAD()
+
+LET email_field = FIND_ELEMENT(By.ID, "email")
+INSERT(email_field, "myemail")
+
+LET password_field    = FIND_ELEMENT(By.ID, "password")
+INSERT(password_field, "mypassword")
+
+LET login_btn = FIND_ELEMENT(By.XPATH, "btnxpath")
+CLICK(login_btn)
+
+OPEN("https://web.simple-mmo.com/travel")
+WAIT_FOR_PAGE_LOAD()
+
+LET trvl_btn = FIND_ELEMENT(By.ID, "trvlid")
+WHILE trvl_btn.active:
+    CLICK(trvl_btn)
+
+EXIT()
