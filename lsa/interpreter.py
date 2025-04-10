@@ -1,5 +1,5 @@
-def interpret(code: str) -> None:
+def run_script(code: str) -> None:
     """
-        Interprets the given code
+        Lexes, Parses and Interprets the given code
     """
     print(code)

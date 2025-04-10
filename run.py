@@ -1,5 +1,5 @@
 import sys
-from lsa.interpreter import interpret
+from lsa.interpreter import run_script
 
 def main() -> None:
     if len(sys.argv) != 2:
@@ -11,7 +11,7 @@ def main() -> None:
     try:
         with open(script_path, "r") as file:
             code = file.read()
-        interpret(code)
+        run_script(code)
     except FileNotFoundError:
         print(f"Error: File not found: {script_path}")
         sys.exit(1)
