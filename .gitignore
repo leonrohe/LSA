@@ -1,0 +1,42 @@
+# Python Bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+lib/
+lib64/
+pip-wheel-metadata/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Logs
+*.log
+
+# Test / coverage reports
+.coverage
+nosetests.xml
+coverage.xml
+*.cover
+*.hypothesis/
+
+# Python-specific artifacts
+*.swp
